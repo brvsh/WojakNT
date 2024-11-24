@@ -90,6 +90,25 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f"
 
 [[package]]
+name = "winapi"
+version = "0.3.7"
+source = "git+https://github.com/Trantect/winapi-rs.git?branch=feature%2Fkm#981da7663da0dd9f82bcfceacdc949293a612ef0"
+dependencies = [
+ "winapi-i686-pc-windows-gnu",
+ "winapi-x86_64-pc-windows-gnu",
+]
+
+[[package]]
+name = "winapi-i686-pc-windows-gnu"
+version = "0.4.0"
+source = "git+https://github.com/Trantect/winapi-rs.git?branch=feature%2Fkm#981da7663da0dd9f82bcfceacdc949293a612ef0"
+
+[[package]]
+name = "winapi-x86_64-pc-windows-gnu"
+version = "0.4.0"
+source = "git+https://github.com/Trantect/winapi-rs.git?branch=feature%2Fkm#981da7663da0dd9f82bcfceacdc949293a612ef0"
+
+[[package]]
 name = "windows-sys"
 version = "0.48.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -234,5 +253,6 @@ name = "wojak-rs"
 version = "0.1.0"
 dependencies = [
  "failure",
+ "winapi",
  "winreg",
 ]
