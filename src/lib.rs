@@ -1,6 +1,7 @@
 #![no_std]
 
 pub mod include;
+pub mod log;
 
 use core::panic::PanicInfo;
 
@@ -11,5 +12,6 @@ fn panic(_info: &PanicInfo) -> ! {
 
 #[no_mangle]
 pub extern "system" fn driver_entry() -> u32 {
+    log!("Hello!");
     0 /* STATUS_SUCCESS */
 }
