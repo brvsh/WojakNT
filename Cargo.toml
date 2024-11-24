@@ -1,9 +1,12 @@
 [package]
 name = "wojak-rs"
 version = "0.1.0"
+authors = ["brvsh <b@brv.sh>"]
 edition = "2021"
 
-[dependencies]
+[build-dependencies]
+winreg = "0.52.0"
+failure = { version = "0.1.8", default-features = false, features = ["std"] }
 
 [profile.dev]
 panic = "abort"
