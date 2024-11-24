@@ -2,6 +2,7 @@
 
 pub mod include;
 pub mod log;
+pub mod process;
 pub mod string;
 
 use core::panic::PanicInfo;
