@@ -1,5 +1,5 @@
 [package]
-name = "wojak-rs"
+name = "WojakNT"
 version = "0.1.0"
 authors = ["brvsh <b@brv.sh>"]
 edition = "2021"
